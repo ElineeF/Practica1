@@ -1,15 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
     scroll-behavior: smooth;
 }
 
-.contenedor {
-    padding: 0 8.4rem;
-    background-color: #FCFAEF;
-}
-
 header {
+    padding: 0 8.4rem;
     position: relative;
     box-shadow: 0 4px 17px rgba(0, 0, 0, .1);
     background: #FCFAEF;
@@ -59,7 +53,7 @@ li i{
     font-size: 1.15rem;
 }
 
-.recetas{
+.crear{
     display: flex;
     gap: .6rem;
     background-color: transparent;
@@ -81,7 +75,7 @@ li i{
     border-radius: 28px;
 }
 
-.recetas a{
+.crear a{
     color: #FCFAEF;
     text-decoration: none;
     font-size: 1.3rem;
@@ -91,6 +85,46 @@ li i{
     transition: .3s;
 }
 
-.recetas i{
+.crear i{
     padding-right: .5rem; 
+}
+
+/*Página Principal con las Recetas*/
+
+.container {
+    position: absolute;
+    background-color: #FCFAEF;
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 1rem;
+    justify-items: center;
+}
+
+/*Items del Grid*/
+.recetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;
+    background: #0C5446;
+    width: 30vw;
+    position: relative;
+    animation: shadow-drop-center 1s;
+}
+@keyframes shadow-drop-center{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 20px 0 rgba(0, 0, 0, .1)}}
+
+.recetas img {
+    max-width: 20rem;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 1rem;
+}
+
+.textoRecetas {
+    padding: 1rem;
+    flex-grow: 1;
+    text-align: center;
 }
