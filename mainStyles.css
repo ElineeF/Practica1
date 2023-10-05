@@ -1,0 +1,130 @@
+* {
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 0 8.4rem;
+    position: relative;
+    box-shadow: 0 4px 17px rgba(0, 0, 0, .1);
+    background: #FCFAEF;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo img{
+    max-width: 38%;
+    height: auto;
+}
+
+ul {
+    display: flex;
+    gap: .6rem;
+    list-style-type: none;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+li a {
+    display: inline-block;
+    padding: .9rem 1rem .05rem;
+    color: #0C5446;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    border-radius: 36px;
+    line-height: 1;
+    transition: .3s;
+}
+
+li a.active, li a:hover {
+    color: #FF6700;
+}
+
+li i{
+    font-size: 1.15rem;
+}
+
+.crear{
+    display: flex;
+    gap: .6rem;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.button {
+    background-color: #FF6700;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+}
+
+.buttonCrear {
+    padding: .3rem 1rem;
+    border-radius: 28px;
+}
+
+.crear a{
+    color: #FCFAEF;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    line-height: 2;
+    transition: .3s;
+}
+
+.crear i{
+    padding-right: .5rem; 
+}
+
+/*Página Principal con las Recetas*/
+
+.container {
+    position: absolute;
+    background-color: #FCFAEF;
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 1rem;
+    justify-items: center;
+}
+
+/*Items del Grid*/
+.recetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;
+    background: #0C5446;
+    width: 30vw;
+    position: relative;
+    animation: shadow-drop-center 1s;
+}
+@keyframes shadow-drop-center{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 20px 0 rgba(0, 0, 0, .1)}}
+
+.recetas img {
+    max-width: 20rem;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 1rem;
+}
+
+.textoRecetas {
+    padding: 1rem;
+    flex-grow: 1;
+    text-align: center;
+}
