@@ -2,11 +2,12 @@
     scroll-behavior: smooth;
 }
 
+
 header {
     padding: 0 8.4rem;
     position: relative;
     box-shadow: 0 4px 17px rgba(0, 0, 0, .1);
-    background: #FCFAEF;
+    background: #084552;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -19,7 +20,7 @@ header {
     padding: 1rem 0;
 }
 
-.logo img{
+.logo img {
     max-width: 38%;
     height: auto;
 }
@@ -35,7 +36,7 @@ ul {
 li a {
     display: inline-block;
     padding: .9rem 1rem .05rem;
-    color: #0C5446;
+    color: #ECE6CF;
     text-decoration: none;
     font-size: 1.05rem;
     font-weight: 600;
@@ -45,23 +46,24 @@ li a {
     transition: .3s;
 }
 
-li a.active, li a:hover {
-    color: #FF6700;
+li a.active,
+li a:hover {
+    color: #55B47D;
 }
 
-li i{
+li i {
     font-size: 1.15rem;
 }
 
-.crear{
+.crear {
     display: flex;
     gap: .6rem;
     background-color: transparent;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .button {
-    background-color: #FF6700;
+    background-color: #55B47D;
     border: none;
     padding: 20px;
     text-align: center;
@@ -73,10 +75,15 @@ li i{
 .buttonCrear {
     padding: .3rem 1rem;
     border-radius: 28px;
+    transition: all .2s ease-in-out;
 }
 
-.crear a{
-    color: #FCFAEF;
+.buttonCrear:hover {
+    transform: scale(1.05);
+}
+
+.crear a {
+    color: #ECE6CF;
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 600;
@@ -85,38 +92,51 @@ li i{
     transition: .3s;
 }
 
-.crear i{
-    padding-right: .5rem; 
+.crear i {
+    padding-right: .5rem;
 }
 
 /*Página Principal con las Recetas*/
 
-.container {
-    position: absolute;
-    background-color: #FCFAEF;
+.general {
+    position: relative;
+    background-color: #084552;
+    padding-top: 5rem;
+    margin: 0 auto;
+
+}
+
+.general .container {
+    width: 50%;
+    position: relative;
+    overflow: scroll;
+    background-color: #084552;
     padding-top: 5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 2rem;
-    grid-row-gap: 1rem;
-    justify-items: center;
+    /*grid-column-gap: 2rem;
+    grid-row-gap: 2rem;*/
+    gap: 3rem;
 }
 
-/*Items del Grid*/
+/*Items*/
 .recetas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 1rem;
-    background: #0C5446;
+    flex-grow: 1;
     width: 30vw;
+    flex-basis: 15vw;
+    flex-direction: column;
+    border-radius: 1rem;
     position: relative;
-    animation: shadow-drop-center 1s;
+    transition: transform 250ms;
+    box-shadow: 0 0 20px 0 #07353f;
 }
-@keyframes shadow-drop-center{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 20px 0 rgba(0, 0, 0, .1)}}
+
+.recetas:hover {
+    transform: translateY(-10px);
+}
 
 .recetas img {
-    max-width: 20rem;
+    width: 30vw;
     height: auto;
     object-fit: contain;
     object-position: center;
@@ -125,6 +145,12 @@ li i{
 
 .textoRecetas {
     padding: 1rem;
-    flex-grow: 1;
+    /*flex-grow: 1;*/
     text-align: center;
+    background: #F29090 !important;
+    color: #084552 !important;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0rem 0rem 1rem 1rem;
 }
