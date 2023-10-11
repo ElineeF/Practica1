@@ -9,8 +9,10 @@
     background: linear-gradient(180deg, rgba(8,69,82,1) 0%, rgba(55,113,126,1) 100%);
 
 }
+
 header {
     padding-right: 5%;
+    padding-left: 5%;
     position: relative;
     box-shadow: 0 4px 17px rgba(0, 0, 0, .1);
     background: #084552;
@@ -19,17 +21,23 @@ header {
     z-index: 1;
 }
 
-
+.boldText{
+    font-weight: 700;
+    color: #ECE6CF;
+    text-shadow: 0 0 6px black;
+}
 
 .navegacion {
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
     padding: 1rem 0;
 }
 
+
 .logo{
-    width: 200px;
+    width: 190px;
+    padding-right: 0;
 }
 
 .logo img {
@@ -49,6 +57,7 @@ ul {
 #HeaderLinks a {
     display: inline-block;
     padding: .9rem 1rem .05rem;
+    margin-left: 0%;
     color: #ECE6CF;
     text-decoration: none;
     font-size: 1.05rem;
@@ -70,8 +79,11 @@ ul {
 
 .crear {
     display: flex;
+    justify-content: center;
     gap: .6rem;
     background-color: transparent;
+    margin: auto;
+
     /*overflow: hidden;*/
 }
 
@@ -87,7 +99,7 @@ ul {
 }
 
 .buttonCrear {
-    padding: .3rem 1rem;
+    padding: 3px;
     border-radius: 20px;
     transition: all .2s ease-in-out;
 }
@@ -114,8 +126,11 @@ ul {
 .Titulo{
     text-align: center;
     color: #ECE6CF;
-    font-weight: 700;
+    font-weight: 900;
     font-size: xx-large;
+    text-shadow: 0 0 6px black;
+    font-family:'Times New Roman', Times, serif;
+    padding-top: 7%;
 }
 #contenedorPrincipal{
     position: relative;
@@ -130,6 +145,8 @@ ul {
     padding-top: 60px;
     color: #ECE6CF;
     text-align: justify;
+    font-weight: 400;
+    text-shadow: 0 0 6px black;
 
 }
 
@@ -214,7 +231,15 @@ textarea{
     margin-top: 0px; /* if max*/
 }
 
-@media only screen and (max-width: 1000px){
+textarea, #inputEmailAddress{
+    border: 2px solid black;
+    background-color: #ECE6CF;
+    color: #084552;
+    font-family: cursive;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 900px){
     .crear span{
        font-size: 15px;
        
@@ -223,6 +248,10 @@ textarea{
         width: 130px;
         height: 50px;
         border-radius: 20px;
+    }
+    .crear{
+        margin-right:18%;
+        margin-left: 10%;
     }
     #HeaderLinks{
         display: grid;
@@ -236,15 +265,20 @@ textarea{
 
 
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 900px){
     .crear span{
-       font-size: 20px;
+       font-size: 18px;
        
     }
     .buttonCrear{
         width: 170px;
-        height: 70px;
+        height: 50px;
         border-radius: 20px;
+    }
+
+    .crear{
+        margin-right:6%;
+        margin-left: 10%;
     }
 
     #HeaderLinks{
