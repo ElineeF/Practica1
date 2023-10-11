@@ -1,0 +1,299 @@
+.crear{
+    border-radius: 20px;
+    width: 140px;
+    height: 70px;
+}
+
+
+.general{
+    background: linear-gradient(180deg, rgba(8,69,82,1) 0%, rgba(55,113,126,1) 100%);
+
+}
+header {
+    padding-right: 5%;
+    position: relative;
+    box-shadow: 0 4px 17px rgba(0, 0, 0, .1);
+    background: #084552;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo{
+    width: 200px;
+}
+
+.logo img {
+    max-width: 38%;
+    height: auto;
+    min-width: 150px;
+}
+
+ul {
+    display: flex;
+    gap: .6rem;
+    list-style-type: none;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+#HeaderLinks a {
+    display: inline-block;
+    padding: .9rem 1rem .05rem;
+    color: #ECE6CF;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    border-radius: 36px;
+    line-height: 1;
+    transition: .3s;
+    text-decoration: none;
+
+}
+
+#HeaderLinks a.active,
+#HeaderLinks a:hover {
+    color: #55B47D;
+    text-decoration: none;
+}
+
+
+.crear {
+    display: flex;
+    gap: .6rem;
+    background-color: transparent;
+    /*overflow: hidden;*/
+}
+
+
+.button {
+    background-color: #55B47D;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+}
+
+.buttonCrear {
+    padding: .3rem 1rem;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+}
+
+.buttonCrear:hover {
+    transform: scale(1.05);
+}
+
+.crear a {
+    color: #ECE6CF;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    line-height: 1.5;
+    transition: .3s;
+}
+
+.crear span {
+    font-size: 15px;
+}
+
+
+.Titulo{
+    text-align: center;
+    color: #ECE6CF;
+    font-weight: 700;
+    font-size: xx-large;
+}
+#contenedorPrincipal{
+    position: relative;
+}
+.rounded-circle{
+    width: 330px;
+    border: 10px solid #F29090;
+}
+
+#contenedorSecundario{
+    padding: 3%; /*Recetas*/
+    padding-top: 60px;
+    color: #ECE6CF;
+    text-align: justify;
+
+}
+
+
+#contenedorPrincipal .tag {
+    width: 90px;
+    display: inline;
+    margin-top: 60px;
+}
+
+.ContenedorTag{
+    position:absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%px;
+    height: 40px;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+
+.tag{
+   border: 1px solid black;
+   padding: 5px;
+   border-radius: 10px;
+   margin:7px;
+   background-color: #ECE6CF;
+
+}
+
+img{
+    display:block;
+    margin:auto;
+    margin-top: 4%;
+    margin-bottom: 40px;
+}
+
+
+.formClass{
+    padding: 2%;
+}
+
+.formClass input{
+    margin:1%;
+
+}
+
+.reviewLabel{
+    vertical-align: top;
+}
+
+textarea{
+    margin:50%
+}
+.emailinput{
+    display: inline;
+    width: 60%;
+    margin-top: 1%;
+}
+#inputEmailAddress{
+    margin-left: 15px;
+}
+
+.ContainerForm1{
+    display:flex;
+    height: 60px;
+    
+}
+
+.EnviarButton{
+    background-color: #F29090;
+    box-shadow: 4px 2px 8px black;
+}
+
+.EnviarButton:hover{
+  color: #ECE6CF;
+}
+.reviewLabel{
+    margin-top: 0px; /* if max*/
+}
+
+@media only screen and (max-width: 1000px){
+    .crear span{
+       font-size: 15px;
+       
+    }
+    .buttonCrear{
+        width: 130px;
+        height: 50px;
+        border-radius: 20px;
+    }
+    #HeaderLinks{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+}
+
+
+
+
+
+@media only screen and (min-width: 1000px){
+    .crear span{
+       font-size: 20px;
+       
+    }
+    .buttonCrear{
+        width: 170px;
+        height: 70px;
+        border-radius: 20px;
+    }
+
+    #HeaderLinks{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
+}
+
+#Puntuacion{
+    margin-top: 12px;
+}
+
+/*RATING*/
+.rate {
+    float: left;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    min-width: 100px;
+    
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #F29090;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #F29090;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #F29090;
+}
