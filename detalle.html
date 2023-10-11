@@ -9,48 +9,70 @@
 </head>
 
 <body>
-  <nav>
-  </nav> <!--Logo y titulo de receta-->
-
-  <h1>Título</h1>
-
-  <div id="contenedorPrincipal">
-    <img src="https://is4-ssl.mzstatic.com/image/thumb/Purple125/v4/79/77/67/7977678c-89be-76ff-b9f3-cdc560170cb6/source/256x256bb.jpg" class="rounded-circle"/>
-    <div class="ContenedorTag">
-      <div class="tag">Etiqueta1</div>
-      <div class="tag">Etiqueta2</div>
-      <div class="tag">Etiqueta3</div>
-      <div class="tag">Etiqueta4</div>
+  <header class="contenedor">
+    <div class="navegacion">
+      <div class="logo">
+        <a href="index.html"><img src="TastyGramAlargado.png"></a>
+      </div>
+      <div class="crear">
+        <button class="button buttonCrear"><a href="#"><span>Crear Receta</span></a></button>
+      </div>
+      <div id="HeaderLinks">
+        <div class="link"><a href="#">Explorar</a></div>
+        <div class="link"><a href="#">Compartir</a></div>
+      </div>
     </div>
-  </div>
-  <div id="contenedorSecundario">
-    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-  </div>
+  </header>
 
-  <div class="formClass">
-    <form>
-        <label for="inputEmailAddress">Email</label>
-        <input type="email" id="inputEmailAddress">
-        <br/>
-        <label for="userReview" class="reviewLabel">Reseña</label>
-        <textarea id="userReview" rows="5" cols="50%"></textarea>
-        
-        
-        <div class="rate">
-            <input type="radio" id="star5" name="rate" value="5" />
-            <label for="star5" title="text">5 stars</label>
-            <input type="radio" id="star4" name="rate" value="4" />
-            <label for="star4" title="text">4 stars</label>
-            <input type="radio" id="star3" name="rate" value="3" />
-            <label for="star3" title="text">3 stars</label>
-            <input type="radio" id="star2" name="rate" value="2" />
-            <label for="star2" title="text">2 stars</label>
-            <input type="radio" id="star1" name="rate" value="1" />
-            <label for="star1" title="text">1 star</label>
-          </div>
+  <div class="general">
+      <h1 class="Titulo">Ramen</h1>
 
-    </form>
-  </div>
+      <div id="contenedorPrincipal">
+        <img src="ramen.jpeg" class="rounded-circle"/>
+        <div class="ContenedorTag">
+          <div class="tag">Etiqueta1</div>
+          <div class="tag">Etiqueta2</div>
+          <div class="tag">Etiqueta3</div>
+          <div class="tag">Etiqueta4</div>
+        </div>
+      </div>
+      <div id="contenedorSecundario">
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+
+      </div>
+
+      <div class="formClass">
+        <div>
+            <div class="ContainerForm1">
+              <div class="emailinput">
+                <label for="inputEmailAddress">Email</label>
+                <input type="email" id="inputEmailAddress">
+              </div>
+              <div id="Puntuacion">Puntuación</div>
+              <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+              </div>
+            
+            </div>
+            <label for="userReview" class="reviewLabel">Reseña</label>
+            <textarea id="userReview" rows="5" cols="65%"></textarea>
+            
+
+        </form>
+        <button class="EnviarButton">Enviar</button>
+      </div>
+    </div>
 </body>
 
 </html>
