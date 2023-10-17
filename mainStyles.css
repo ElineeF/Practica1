@@ -1,76 +1,89 @@
+@font-face {
+    font-family: firaFont;
+    src: url(Fira/FiraSansCondensed-Medium.ttf);
+}
+
 * {
     scroll-behavior: smooth;
+    font-family: firaFont;
 }
 
-
-header {
-    padding: 0 8.4rem;
-    position: relative;
-    box-shadow: 0 4px 17px rgba(0, 0, 0, .1);
-    background: #084552;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
+/*NavBar*/
 .navegacion {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
+    background-color: #084552;
+}
+
+#shadow {
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.068), 0 0 40px rgba(0, 0, 0, 0.021) inset;
+}
+
+#shadow:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
 }
 
 .logo img {
-    max-width: 38%;
+    max-width: 50%;
+    min-width: 10px;
     height: auto;
 }
 
-ul {
-    display: flex;
-    gap: .6rem;
-    list-style-type: none;
-    background-color: transparent;
-    overflow: hidden;
+@media (max-width: 450px) {
+    .logo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-li a {
-    display: inline-block;
-    padding: .9rem 1rem .05rem;
+.customCollapseMenu {
+    justify-content: flex-end;
+}
+.customCollapseMenu ul{
+    margin-right: 1px !important;
+}
+
+.customCollapseMenu li{
+    margin-right: 10px;
+}
+
+#buttonCollapse {
+    
+    background-color: #ECE6CF;
+}
+
+.headerElement a, i{
     color: #ECE6CF;
     text-decoration: none;
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     font-weight: 600;
-    letter-spacing: .7px;
-    border-radius: 36px;
-    line-height: 1;
     transition: .3s;
 }
 
-li a.active,
-li a:hover {
+.headerElement a.active, i:hover{
     color: #55B47D;
 }
 
-li i {
-    font-size: 1.15rem;
+#dropCustom {
+    background-color:#ECE6CF;
+    color:#ECE6CF;
 }
 
-.crear {
-    display: flex;
-    gap: .6rem;
-    background-color: transparent;
-    /*overflow: hidden;*/
-}
-
-.button {
-    background-color: #55B47D;
-    border: none;
-    padding: 20px;
-    text-align: center;
+#dropCustom a, hr {
+    color:#07353f;
     text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
+    font-weight: 500;
+    transition: .3s;
 }
+
+#dropCustom a:hover {
+    color:#55B47D;
+    background-color: #ECE6CF;
+}
+
 
 .buttonCrear {
     padding: .3rem 1rem;
@@ -78,57 +91,54 @@ li i {
     transition: all .2s ease-in-out;
 }
 
-.buttonCrear:hover {
-    transform: scale(1.05);
-}
-
-.crear a {
+.buttonCrear a{
     color: #ECE6CF;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     font-weight: 600;
     letter-spacing: .7px;
-    line-height: 2;
     transition: .3s;
 }
 
-.crear i {
-    padding-right: .5rem;
+
+.buttonCrear:hover {
+    transform: scale(1.05);
 }
 
 /*Página Principal con las Recetas*/
 
 .general {
     position: relative;
-    background-color: #084552;
-    padding-top: 5rem;
+    background-color: #084857;
+    padding-top: 2rem;
     margin: 0 auto;
 
 }
 
 .general .container {
-    width: 50%;
+    width: 90%;
+    height: 100%;
     position: relative;
-    overflow: scroll;
-    background-color: #084552;
-    padding-top: 5rem;
+    overflow: -moz-hidden-unscrollable;
+    background-color: #084857;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /*grid-column-gap: 2rem;
-    grid-row-gap: 2rem;*/
     gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: minmax(250px, 288px);
 }
 
 /*Items*/
 .recetas {
     flex-grow: 1;
-    width: 30vw;
-    flex-basis: 15vw;
+    flex-basis: 10vw;
     flex-direction: column;
     border-radius: 1rem;
     position: relative;
     transition: transform 250ms;
     box-shadow: 0 0 20px 0 #07353f;
+    overflow: hidden;
 }
 
 .recetas:hover {
@@ -136,8 +146,15 @@ li i {
 }
 
 .recetas img {
-    width: 30vw;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.imgRecetas {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     object-position: center;
     border-radius: 1rem;
@@ -145,7 +162,6 @@ li i {
 
 .textoRecetas {
     padding: 1rem;
-    /*flex-grow: 1;*/
     text-align: center;
     background: #F29090 !important;
     color: #084552 !important;
