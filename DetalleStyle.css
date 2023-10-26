@@ -1,3 +1,13 @@
+@font-face {
+    font-family: firaFont;
+    src: url(Fira/FiraSansCondensed-Medium.ttf);
+}
+
+* {
+    scroll-behavior: smooth;
+    font-family: firaFont;
+}
+
 .crear{
     border-radius: 20px;
     width: 140px;
