@@ -1,25 +1,125 @@
-.crear{
-    border-radius: 20px;
-    width: 140px;
-    height: 70px;
+/*NavBar*/
+.navegacion {
+    background-color: #084552;
 }
 
-
-.general{
-    background: linear-gradient(180deg, rgba(8,69,82,1) 0%, rgba(55,113,126,1) 100%);
-
-}
-
-header {
-    padding-right: 5%;
-    padding-left: 5%;
+#shadow {
     position: relative;
-    box-shadow: 0 4px 17px rgba(0, 0, 0, .1);
-    background: #084552;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.068), 0 0 40px rgba(0, 0, 0, 0.021) inset;
 }
+
+#shadow:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+.logo img {
+    max-width: 50%;
+    min-width: 10px;
+    height: auto;
+}
+
+@media (max-width: 450px) {
+    .logo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.customCollapseMenu {
+    justify-content: flex-end;
+}
+.customCollapseMenu ul{
+    margin-right: 1px !important;
+}
+
+.customCollapseMenu li{
+    margin-right: 10px;
+}
+
+#buttonCollapse {
+    
+    background-color: #ECE6CF;
+}
+
+.headerElement a, i{
+    color: #ECE6CF;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.headerElement a.active, i:hover{
+    color: #55B47D;
+}
+
+#dropCustom {
+    background-color:#ECE6CF;
+    color:#ECE6CF;
+}
+
+#dropCustom a, hr {
+    color:#07353f;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+
+#dropCustom a:hover {
+    color:#55B47D;
+    background-color: #ECE6CF;
+}
+
+
+.buttonCrear {
+    padding: .3rem 1rem;
+    border-radius: 28px;
+    transition: all .2s ease-in-out;
+}
+
+.buttonCrear a{
+    color: #ECE6CF;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    transition: .3s;
+}
+
+
+.buttonCrear:hover {
+    transform: scale(1.05);
+}
+
+/*Contenedor general*/
+
+.general {
+    position: relative;
+    background: rgb(8,69,82);
+    background: linear-gradient(0deg, rgba(8,69,82,1) 97%, rgba(2,36,43,1) 100%);
+    padding-top: 2rem;
+    margin: 0 auto;
+
+}
+
+.general .container {
+    width: 90%;
+    height: 100%;
+    position: relative;
+    overflow: -moz-hidden-unscrollable;
+    background-color: #084857;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: minmax(250px, 288px);
+}
+
 
 .boldText{
     font-weight: 700;
@@ -27,100 +127,16 @@ header {
     text-shadow: 0 0 6px black;
 }
 
-.navegacion {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    padding: 1rem 0;
+@font-face {
+    font-family: firaFont;
+    src: url(Fira/FiraSansCondensed-Medium.ttf);
 }
 
-
-.logo{
-    width: 190px;
-    padding-right: 0;
+* {
+    scroll-behavior: smooth;
+    font-family: firaFont;
 }
 
-.logo img {
-    max-width: 38%;
-    height: auto;
-    min-width: 150px;
-}
-
-ul {
-    display: flex;
-    gap: .6rem;
-    list-style-type: none;
-    background-color: transparent;
-    overflow: hidden;
-}
-
-#HeaderLinks a {
-    display: inline-block;
-    padding: .9rem 1rem .05rem;
-    margin-left: 0%;
-    color: #ECE6CF;
-    text-decoration: none;
-    font-size: 1.05rem;
-    font-weight: 600;
-    letter-spacing: .7px;
-    border-radius: 36px;
-    line-height: 1;
-    transition: .3s;
-    text-decoration: none;
-
-}
-
-#HeaderLinks a.active,
-#HeaderLinks a:hover {
-    color: #55B47D;
-    text-decoration: none;
-}
-
-
-.crear {
-    display: flex;
-    justify-content: center;
-    gap: .6rem;
-    background-color: transparent;
-    margin: auto;
-
-    /*overflow: hidden;*/
-}
-
-
-.button {
-    background-color: #55B47D;
-    border: none;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-}
-
-.buttonCrear {
-    padding: 3px;
-    border-radius: 20px;
-    transition: all .2s ease-in-out;
-}
-
-.buttonCrear:hover {
-    transform: scale(1.05);
-}
-
-.crear a {
-    color: #ECE6CF;
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 600;
-    letter-spacing: .7px;
-    line-height: 1.5;
-    transition: .3s;
-}
-
-.crear span {
-    font-size: 15px;
-}
 
 
 .Titulo{
@@ -129,33 +145,41 @@ ul {
     font-weight: 900;
     font-size: xx-large;
     text-shadow: 0 0 6px black;
-    font-family:'Times New Roman', Times, serif;
-    padding-top: 7%;
+    /*font-family:'Times New Roman', Times, serif;*/
+    padding-top: 1%;
 }
+ /*Contenedor principal*/
 #contenedorPrincipal{
     position: relative;
-}
-.rounded-circle{
-    width: 330px;
-    border: 10px solid #F29090;
+    margin: 3%;
 }
 
-#contenedorSecundario{
-    padding: 3%; /*Recetas*/
-    padding-top: 60px;
-    color: #ECE6CF;
-    text-align: justify;
-    font-weight: 400;
-    text-shadow: 0 0 6px black;
-
+img{
+    display:block;
+    margin:auto;
+    margin-top: 4%;
+    margin-bottom: 40px;
+    transition: 1s;
 }
 
+img:hover{
+    transform: translateY(-10px);
+    transition: 1s;
+}
+
+/*Contenedor de etiquetas*/
 
 #contenedorPrincipal .tag {
     width: 90px;
     display: inline;
     margin-top: 60px;
 }
+
+.rounded-circle{
+    width: 330px;
+    border: 10px solid #F29090;
+}
+
 
 .ContenedorTag{
     position:absolute;
@@ -176,17 +200,24 @@ ul {
    padding: 5px;
    border-radius: 10px;
    margin:7px;
-   background-color: #ECE6CF;
+   background-color: #F29090;
 
 }
 
-img{
-    display:block;
-    margin:auto;
-    margin-top: 4%;
-    margin-bottom: 40px;
+
+/*Contenedor secundario*/
+#contenedorSecundario{
+    padding: 3%;
+    padding-top: 60px;
+    color: #ECE6CF;
+    text-align: justify;
+    font-weight: 400;
+    text-shadow: 0 0 6px black;
+    margin: 2%;
+
 }
 
+/* FORMULARIO DE RESEÑA*/
 
 .formClass{
     padding: 2%;
@@ -228,7 +259,7 @@ textarea{
   color: #ECE6CF;
 }
 .reviewLabel{
-    margin-top: 0px; /* if max*/
+    margin-top: 0px;
 }
 
 textarea, #inputEmailAddress{
@@ -239,54 +270,6 @@ textarea, #inputEmailAddress{
     font-weight: 600;
 }
 
-@media only screen and (max-width: 900px){
-    .crear span{
-       font-size: 15px;
-       
-    }
-    .buttonCrear{
-        width: 130px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    .crear{
-        margin-right:18%;
-        margin-left: 10%;
-    }
-    #HeaderLinks{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
-    }
-
-}
-
-
-
-
-
-@media only screen and (min-width: 900px){
-    .crear span{
-       font-size: 18px;
-       
-    }
-    .buttonCrear{
-        width: 170px;
-        height: 50px;
-        border-radius: 20px;
-    }
-
-    .crear{
-        margin-right:6%;
-        margin-left: 10%;
-    }
-
-    #HeaderLinks{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto;
-    }
-}
 
 #Puntuacion{
     margin-top: 12px;

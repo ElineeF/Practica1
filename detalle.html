@@ -2,38 +2,63 @@
 <html>
   
 <head>
+    <title>Ramen</title>
     <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="logoNegro.ico">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"> </script>
     <link rel="stylesheet" href="DetalleStyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
 
 <body>
-  <header class="contenedor">
-    <div class="navegacion">
-      <div class="logo">
-        <a href="index.html"><img src="TastyGramAlargado.png"></a>
+  <nav class="navbar navbar-expand-lg navegacion" id="shadow">
+    <div class="container-fluid">
+
+      <a class="navbar-brand logo" href="index.html"><img src="Imagenes/TastyGramAlargado.png"></a>
+      
+      <button id= "buttonCollapse" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse customCollapseMenu" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row">
+          <li class="nav-item headerElement">
+            <a class="nav-link" href="#"><i class="bi bi-person-fill"></i></a>
+          </li>
+          <li class="nav-item dropdown headerElement">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-list"></i>
+            </a>
+            <ul id="dropCustom" class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Explorar</a></li>
+              <li><a class="dropdown-item" href="#">Compartir</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Ajustes</a></li>
+            </ul>
+          </li>
+          <li class="nav-item buttonCrear">
+            <button class="btn btn-success" type="submit">
+              <a href="#"><i class="bi bi-plus"></i>Crear Receta</a>
+            </button>          
+          </li>
+        </ul>
       </div>
-      <div class="crear">
-        <button class="button buttonCrear"><a href="#"><span>Crear Receta</span></a></button>
-      </div>
-      <div id="HeaderLinks">
-        <div class="link"><a href="#">Explorar</a></div>
-        <div class="link"><a href="#">Compartir</a></div>
-      </div>
+
     </div>
-  </header>
+  </nav>
+
 
   <div class="general">
-      <h1 class="Titulo">Ramen</h1>
+      <h1 class="Titulo display-1">Ramen</h1>
 
       <div id="contenedorPrincipal">
-        <img src="ramen.jpeg" class="rounded-circle"/>
+        <img src="Imagenes/ramen.jpeg" alt="Ramen" class="rounded-circle"/>
         <div class="ContenedorTag">
-          <div class="tag">Etiqueta1</div>
-          <div class="tag">Etiqueta2</div>
-          <div class="tag">Etiqueta3</div>
-          <div class="tag">Etiqueta4</div>
+          <div class="tag sg">Sin gluten</div>
+          <div class="tag sa">Sin aceite</div>
+          <div class="tag sl">Sin lactosa</div>
+          <div class="tag sh">Sin huevo</div>
         </div>
       </div>
       <div id="contenedorSecundario">
