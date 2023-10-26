@@ -1,0 +1,22 @@
+@font-face {
+    font-family: firaFont;
+    src: url(Fira/FiraSansCondensed-Medium.ttf);
+}
+
+* {
+    scroll-behavior: smooth;
+    font-family: firaFont;
+    color:#ECE6CF;
+}
+
+.container{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    position: relative;
+    overflow: -moz-hidden-unscrollable;
+    background-color: #084857;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
