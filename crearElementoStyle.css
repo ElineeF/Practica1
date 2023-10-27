@@ -6,17 +6,42 @@
 * {
     scroll-behavior: smooth;
     font-family: firaFont;
-    color:#ECE6CF;
+}
+
+body{
+    background-color: #084857 !important;
 }
 
 .container{
     display: flex;
-    width: 90%;
-    height: 100%;
     position: relative;
     overflow: -moz-hidden-unscrollable;
     background-color: #084857;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.recipeInfo{
+    color:#ECE6CF;
+}
+
+.item h1{
+    margin-bottom: 1rem;
+    color:#ECE6CF;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group option{
+    color:#07353f;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
 }
