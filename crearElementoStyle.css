@@ -54,6 +54,12 @@ body{
 .buttons{
     display: flex;
     justify-content: space-between;
+    
+}
+
+.buttons a{
+    text-decoration: none;
+    color:#ECE6CF;
 }
 
 .form-group option{
