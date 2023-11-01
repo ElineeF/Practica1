@@ -1,6 +1,17 @@
-/*NavBar*/
-.navegacion {
-    background-color: #084552;
+@font-face {
+    font-family: firaFont;
+    src: url(Fira/FiraSansCondensed-Medium.ttf);
+}
+
+* {
+    scroll-behavior: smooth;
+    font-family: firaFont;
+}
+
+.crear{
+    border-radius: 20px;
+    width: 140px;
+    height: 70px;
 }
 
 #shadow {
@@ -146,8 +157,7 @@
     font-weight: 900;
     font-size: xx-large;
     text-shadow: 0 0 6px black;
-    /*font-family:'Times New Roman', Times, serif;*/
-    padding-top: 1%;
+    padding-top: 7%;
 }
  /*Contenedor principal*/
 #contenedorPrincipal{

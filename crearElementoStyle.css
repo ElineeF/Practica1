@@ -1,0 +1,90 @@
+@font-face {
+    font-family: firaFont;
+    src: url(Fira/FiraSansCondensed-Medium.ttf);
+}
+
+@font-face {
+    font-family: firaFontLight;
+    src: url(Fira/FiraSansCondensed-Light.ttf);
+}
+
+
+* {
+    scroll-behavior: smooth;
+    font-family: firaFont;
+}
+
+body{
+    background-color: #084857 !important;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    overflow: -moz-hidden-unscrollable;
+    background-color: #084857;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.recipeInfo{
+    color:#ECE6CF;
+}
+
+.recipeInfo label{
+    font-size: 1.4rem;
+}
+
+.recipeInfo h1{
+    margin-bottom: 1rem;
+    font-weight: bolder;
+    color:#F29090;
+    font-size: 3.4rem;
+    text-align: center;
+}
+
+.custom-file input{
+    font-size: .9rem;
+    font-family: firaFontLight;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.buttons a{
+    text-decoration: none;
+    color:#ECE6CF;
+}
+
+.form-group option{
+    color:#07353f;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.allergens p{
+    font-size: 1.4rem;
+}
+
+.allergens ul{
+   list-style: none; 
+   padding: 0;
+}
+
+.checkInList{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.checkInList label{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: firaFontLight;
+}

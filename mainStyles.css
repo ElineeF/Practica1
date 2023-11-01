@@ -161,7 +161,7 @@
 }
 
 .textoRecetas {
-    padding: 1rem;
+    padding: 0.8rem;
     text-align: center;
     background: #F29090 !important;
     color: #084552 !important;
@@ -169,4 +169,8 @@
     position: absolute;
     bottom: 0;
     border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.textoRecetas h2{
+    font-size: 1.5rem;
 }
