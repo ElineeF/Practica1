@@ -99,8 +99,9 @@
 
 .general {
     position: relative;
-    background: rgb(8,69,82);
-    background: linear-gradient(0deg, rgba(8,69,82,1) 97%, rgba(2,36,43,1) 100%);
+   /* background: rgb(8,69,82);
+    background: linear-gradient(0deg, rgba(8,69,82,1) 97%, rgba(2,36,43,1) 100%);*/
+    background-color: #084857;
     padding-top: 2rem;
     margin: 0 auto;
 
