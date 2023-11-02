@@ -18,21 +18,145 @@ body{
     background-color: #084857 !important;
 }
 
-.container{
-    display: flex;
+/*NavBar*/
+
+/*NavBar*/
+.navegacion {
+    background-color: #084552;
+}
+
+#shadow {
     position: relative;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.068), 0 0 40px rgba(0, 0, 0, 0.021) inset;
+}
+
+#shadow:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+.logo img {
+    max-width: 50%;
+    min-width: 10px;
+    height: auto;
+}
+
+@media (max-width: 450px) {
+    .logo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.customCollapseMenu {
+    justify-content: flex-end;
+}
+.customCollapseMenu ul{
+    margin-right: 1px !important;
+}
+
+.customCollapseMenu li{
+    margin-right: 10px;
+}
+
+#buttonCollapse {
+    
+    background-color: #ECE6CF;
+}
+
+.headerElement a, i{
+    color: #ECE6CF;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.headerElement a.active, i:hover{
+    color: #55B47D;
+}
+
+#dropCustom {
+    background-color:#ECE6CF;
+    color:#ECE6CF;
+}
+
+#dropCustom a, hr {
+    color:#07353f;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+
+#dropCustom a:hover {
+    color:#55B47D;
+    background-color: #ECE6CF;
+}
+
+
+.buttonCrear {
+    padding: .3rem 1rem;
+    border-radius: 28px;
+    transition: all .2s ease-in-out;
+}
+
+.buttonCrear a{
+    color: #ECE6CF;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    transition: .3s;
+}
+
+
+.buttonCrear:hover {
+    transform: scale(1.05);
+}
+
+
+/*Contenedor*/
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     overflow: -moz-hidden-unscrollable;
     background-color: #084857;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
+.mainTitle{
+    color: #ECE6CF;
+    font-weight: 900;
+    font-size: xx-large;
+    text-shadow: 0 0 9px black;
+}
+.custom-file > *{
+    color: #ECE6CF;
+}
+
+
 .recipeInfo{
     color:#ECE6CF;
+    width: 284px;
+    background-color: #07353f;
+    padding: 10px 10px 20px 10px;
+    border: 6px solid #F29090;
+    box-shadow: 10px 10px 5px black;
+    padding: 20px;
+    margin: 20px;
+    margin-top:0px;
+    margin-left: 100px;
+    border-radius: 20px;
+
 }
+
+
 
 .recipeInfo label{
     font-size: 1.4rem;
@@ -44,6 +168,32 @@ body{
     color:#F29090;
     font-size: 3.4rem;
     text-align: center;
+}
+
+#MainGif > img{
+    width: 600px;
+    margin-top: 100px;
+    margin-left: 60px;
+    border: 10px solid #F29090;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px black;
+}
+
+.form-control:hover{
+    border: 5px solid #F29090;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.mb-3:hover{
+  color: #F29090;
+  transition: 0.5s;
+  transform: scale(1.0);
+}
+
+.mb-3>input, .mb-3>textarea{
+    border: 3px solid #F29090;
+    background-color: #084857;
 }
 
 .custom-file input{

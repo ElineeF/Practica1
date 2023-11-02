@@ -13,14 +13,54 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navegacion" id="shadow">
+        <div class="container-fluid">
+    
+          <a class="navbar-brand logo" href="index.html"><img src="/Imagenes/TastyGramAlargado.png"></a>
+          
+          <button id= "buttonCollapse" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse customCollapseMenu" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row">
+              <li class="nav-item headerElement">
+                <a class="nav-link" href="#"><i class="bi bi-person-fill"></i></a>
+              </li>
+              <li class="nav-item dropdown headerElement">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-list"></i>
+                </a>
+                <ul id="dropCustom" class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Explorar</a></li>
+                  <li><a class="dropdown-item" href="#">Compartir</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Ajustes</a></li>
+                </ul>
+              </li>
+              <li class="nav-item buttonCrear">
+                <button class="btn btn-success" type="button">
+                  <a href="crearElemento.html"><i class="bi bi-plus"></i>Crear Receta</a>
+                </button>          
+              </li>
+            </ul>
+          </div>
+    
+        </div>
+      </nav>
+    
     <div class="container">
         <div class="titleAndImg">
-            <h1>¡CREA TU NUEVA RECETA!</h1>
+            <h1 class="mainTitle">¡CREA TU NUEVA RECETA!</h1>
             <div class="custom-file">
                 <input type="file" class="custom-file-input" id="rcpImage" lang="es">
                 <label class="custom-file-label" for="rcpImage">Seleccionar Imagen</label>
             </div>
+            <div id="MainGif">
+                <img src="/Imagenes/FoodMain.gif" alt="Gif Promocional"/>
+            </div>
         </div>
+        
         <div class="recipeInfo">
             <form>
                 <div class="mb-3">
