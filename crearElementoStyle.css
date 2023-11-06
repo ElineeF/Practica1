@@ -67,6 +67,10 @@ body{
     background-color: #ECE6CF;
 }
 
+.headerElement{
+    margin-top: .7rem;
+}
+
 .headerElement a, i{
     color: #ECE6CF;
     text-decoration: none;
