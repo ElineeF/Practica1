@@ -8,6 +8,8 @@
     font-family: firaFont;
 }
 
+/*NavBar*/
+
 .crear{
     border-radius: 20px;
     width: 140px;
@@ -38,6 +40,11 @@
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+
+nav{
+    background-color: #084552;
 }
 
 .customCollapseMenu {
@@ -110,11 +117,10 @@
 
 .general {
     position: relative;
-   /* background: rgb(8,69,82);
-    background: linear-gradient(0deg, rgba(8,69,82,1) 97%, rgba(2,36,43,1) 100%);*/
     background-color: #084857;
     padding-top: 2rem;
     margin: 0 auto;
+    padding-bottom: 40px;
 
 }
 
@@ -165,7 +171,7 @@
     margin: 3%;
 }
 
-img{
+.logoImg{
     display:block;
     margin:auto;
     margin-top: 4%;
@@ -173,7 +179,7 @@ img{
     transition: 1s;
 }
 
-img:hover{
+.logoImg:hover{
     transform: translateY(-10px);
     transition: 1s;
 }
@@ -226,6 +232,10 @@ img:hover{
     text-shadow: 0 0 6px black;
     margin: 2%;
 
+}
+
+#tituloPreparacion, #tituloIngredientes{
+    color: #55B47D;
 }
 
 /* FORMULARIO DE RESEÑA*/
@@ -325,3 +335,24 @@ textarea, #inputEmailAddress{
 .rate > label:hover ~ input:checked ~ label {
     color: #F29090;
 }
+
+/*EndButtons*/
+#EndButtons{
+    padding-bottom: 30px;
+}
+
+#EndButtons button{
+    background-color: #F29090;
+    box-shadow: 4px 2px 8px black;
+    padding: 6px;
+}
+
+#EndButtons button:nth-child(3) a{
+    text-decoration: none;
+    color:black;
+  }
+
+#EndButtons button:nth-child(2),#EndButtons button:nth-child(3){
+  margin-left: 10px;
+}
+
