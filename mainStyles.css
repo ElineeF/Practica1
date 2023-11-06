@@ -13,7 +13,6 @@
     background-color: #084552;
 }
 
-<<<<<<< Updated upstream
 #shadow {
     position: relative;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.068), 0 0 40px rgba(0, 0, 0, 0.021) inset;
@@ -29,10 +28,6 @@
 .logo img {
     max-width: 50%;
     min-width: 10px;
-=======
-.logo img{
-    max-width: 160px;
->>>>>>> Stashed changes
     height: auto;
 }
 
@@ -55,8 +50,7 @@
     margin-right: 10px;
 }
 
-#buttonCollapse {
-    
+#buttonCollapse { 
     background-color: #ECE6CF;
 }
 
@@ -91,7 +85,6 @@
 
 
 .buttonCrear {
-    /*padding: .3rem 1rem;*/
     padding: 3%;
     width: 220px;
     border-radius: 28px;

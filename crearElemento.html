@@ -56,15 +56,8 @@
       </nav>
     
     <div class="container">
-        <div class="titleAndImg">
-            <h1 class="mainTitle">¡CREA TU NUEVA RECETA!</h1>
-            <div class="custom-file">
-                <input type="file" class="custom-file-input" id="rcpImage" lang="es">
-                <label class="custom-file-label" for="rcpImage">Seleccionar Imagen</label>
-            </div>
-            <div id="MainGif">
-                <img src="/Imagenes/FoodMain.gif" alt="Gif Promocional"/>
-            </div>
+        <div id="MainGif">
+            <img src="/Imagenes/FoodMain.gif" alt="Gif Promocional"/>
         </div>
         
         <div class="recipeInfo">
@@ -75,19 +68,17 @@
                     <br>
                     <input type="file" accept=".jpg,.png,.jpeg" class="custom-file-input" for="rcpImage" lang="es" />
                 </div>
-                
             </div>
             <br>
-            <br>
-            <div class="recipeInfo">
+            <div>
                 <form>
-                    <div class="mb-3">
+                    <div class="mb-3 text">
                         <label for="rcpName" class="form-label">Nombre de la Receta</label>
                         <input type="text" class="form-control" id="rcpName" aria-describedby="recipeName" />
                         
                     </div>
                     <br>
-                    <div class="mb-3">
+                    <div class="mb-3 text">
                         <label for="rcpIngredients" class="form-label">Ingredientes</label>
                         <input type="text" class="form-control" id="rcpName" aria-describedby="recipeName">
                     </div>
@@ -126,7 +117,7 @@
                             </li>
                         </ul>
                         <br>
-                        <div class="mb-3">
+                        <div class="mb-3 text">
                             <label for="dietRestrictions">Apto para Veganos/Vegetarianos</label>
                             <select class="form-control" id="dietRestrictions">
                                 <option></option>
