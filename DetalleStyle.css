@@ -1,112 +1,6 @@
-<<<<<<< Updated upstream
 @font-face {
     font-family: firaFont;
     src: url(Fira/FiraSansCondensed-Medium.ttf);
-=======
-header {
-    padding: 0 8.4rem;
-    position: relative;
-    box-shadow: 0 4px 17px rgba(0, 0, 0, .1);
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    background-color: #084552;
-}
-
-.navegacion {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-}
-
-.logo img{
-    max-width: 160px;
-    height: auto;
-}
-
-ul {
-    display: flex;
-    gap: .6rem;
-    list-style-type: none;
-    background-color: transparent;
-    overflow: hidden;
-}
-
-li button {
-    display: inline-block;
-    padding: .9rem 1rem .05rem;
-    color: #ECE6CF;
-    text-decoration: none;
-    font-size: 1.05rem;
-    font-weight: 600;
-    letter-spacing: .7px;
-    border-radius: 36px;
-    line-height: 1;
-    transition: .3s;
-    background-color: #55B47D;
-    border: none;
-}
-
-
-
-li button.active, li button:hover {
-    color: #FF6700;
-}
-
-li i{
-    font-size: 1.15rem;
-}
-
-.crear{
-    display: flex;
-    gap: .6rem;
-    background-color: transparent;
-    overflow: hidden;
-}
-
-.button {
-    background-color: #0C5446;
-    border: none;
-    padding: 40px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-}
-
-.buttonCrear {
-    /*padding: .3rem 1rem;*/
-    padding: 3%;
-    width: 220px;
-    border-radius: 28px;
-}
-.crear:hover{
-    color:#FF6700;
-}
-
-.crear a{
-    color: #FCFAEF;
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 600;
-    letter-spacing: .7px;
-    line-height: 2;
-    transition: .3s;
-}
-
-.crear i{
-    padding-right: .5rem; 
-}
-
-.rounded-circle{
-    width: 300px;
-}
-
-
-h1{
-    text-align: center;
->>>>>>> Stashed changes
 }
 
 * {
@@ -120,8 +14,6 @@ h1{
     border-radius: 20px;
     width: 140px;
     height: 70px;
-.navegacion {
-    background-color: #084552;
 }
 
 #shadow {
