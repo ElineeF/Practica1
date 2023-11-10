@@ -9,11 +9,8 @@
 }
 
 /*NavBar*/
-
-.crear{
-    border-radius: 20px;
-    width: 140px;
-    height: 70px;
+.navegacion {
+    background-color: #084552;
 }
 
 #shadow {
@@ -42,11 +39,6 @@
     }
 }
 
-
-nav{
-    background-color: #084552;
-}
-
 .customCollapseMenu {
     justify-content: flex-end;
 }
@@ -58,8 +50,7 @@ nav{
     margin-right: 10px;
 }
 
-#buttonCollapse {
-    
+#buttonCollapse { 
     background-color: #ECE6CF;
 }
 
@@ -98,7 +89,8 @@ nav{
 
 
 .buttonCrear {
-    padding: .3rem 1rem;
+    padding: 3%;
+    width: 220px;
     border-radius: 28px;
     transition: all .2s ease-in-out;
 }
@@ -116,7 +108,6 @@ nav{
 .buttonCrear:hover {
     transform: scale(1.05);
 }
-
 /*Contenedor general*/
 
 .general {

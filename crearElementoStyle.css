@@ -135,10 +135,6 @@ body{
 }
 
 
-.custom-file > *{
-    color: #ECE6CF;
-}
-
 .recipeInfo{
     color:#ECE6CF;
     width: 40rem;
@@ -174,14 +170,13 @@ body{
 
 .form-control:hover{
     border: 5px solid #F29090;
-    transition: 250ms;
+    transition: all 0.1s ease-in-out;
     transform: scale(1.0);
 }
 
-.mb-3:hover{
+.mb-3:hover, .allergens li:hover{
   color: #F29090;
-  transition: 250ms;
-  transform: scale(1.0);
+  transition: all 0.1s ease-in-out;
 }
 
 .text>input, .text>textarea, .text>select{

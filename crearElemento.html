@@ -63,15 +63,16 @@
         <div class="recipeInfo">
             <div class="titleAndImg">
                 <h1>¡CREA TU NUEVA RECETA!</h1>
-                <div class="custom-file">
-                    <label class="custom-file-label" id="rcpImage">Selecciona una Imagen</label>
-                    <br>
-                    <input type="file" accept=".jpg,.png,.jpeg" class="custom-file-input" for="rcpImage" lang="es" />
-                </div>
             </div>
             <br>
             <div>
                 <form>
+                    <div class="mb-3 text">
+                        <label class="custom-file-label" id="rcpImage">Selecciona una Imagen</label>
+                        <br>
+                        <input type="url" class="form-control" for="rcpImage" lang="es" />
+                    </div>
+                    <br>
                     <div class="mb-3 text">
                         <label for="rcpName" class="form-label">Nombre de la Receta</label>
                         <input type="text" class="form-control" id="rcpName" aria-describedby="recipeName" />
@@ -116,32 +117,33 @@
                                 <label class="form-check-label" for="fish">Pescados</label>
                             </li>
                         </ul>
-                        <br>
-                        <div class="mb-3 text">
-                            <label for="dietRestrictions">Apto para Veganos/Vegetarianos</label>
-                            <select class="form-control" id="dietRestrictions">
-                                <option></option>
-                                <option>Veganos</option>
-                                <option>Vegetarianos</option>
-                            </select>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="celiac" />
-                            <input type="checkbox" class="form-check-input" id="celiac">
-                            <label class="form-check-label" for="celiac">Apto para Celiacos</label>
-                        </div>
-                        <br>
-                        <br>
-                        <div class="buttons">
-                            <a href="index.html">
-                                <button type="button" class="btn btn-secondary">
-                                    Cancelar
-                                </button></a>
-                            <a href="#">
-                                <button type="submit" class="btn btn-success">
-                                    Guardar
-                                </button></a>
-                        </div>
+                    </div>
+                    <br>
+                    <div class="mb-3 text">
+                        <label for="dietRestrictions">Apto para Veganos/Vegetarianos</label>
+                        <select class="form-control" id="dietRestrictions">
+                            <option></option>
+                            <option>Veganos</option>
+                            <option>Vegetarianos</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="celiac" />
+                        <input type="checkbox" class="form-check-input" id="celiac">
+                        <label class="form-check-label" for="celiac">Apto para Celiacos</label>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="buttons">
+                        <a href="index.html">
+                            <button type="button" class="btn btn-secondary">
+                                Cancelar
+                            </button></a>
+                        <a href="#">
+                            <button type="submit" class="btn btn-success">
+                                Guardar
+                            </button></a>
+                    </div>
                 </form>
             </div>
 </body>
